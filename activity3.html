@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Activity 3</title>
+    </head>
+    <body>
+        <h2>Arrow Function</h2>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+        <p id="p5"></p>
+        <p id="p6"></p>
+        <script>
+            function hello(){
+                return "Hello World";
+            }
+            function add(a,b){
+                return a+b;
+            }
+            function hi(){
+                return "Hi" +name;
+            }
+            document.getElementById("p1").innerHTML=hello();
+            document.getElementById("p2").innerHTML=add(27,14);
+            document.getElementById("p3").innerHTML=hi("Chimi");
+
+
+            hello=()=>"Hello World";
+            add=(a,b)=>(a+b);
+            hi1=(name)=>"Hi" +name;
+            document.getElementById("p4").innerHTML="Arrow Function " +hello();
+            document.getElementById("p5").innerHTML="Arrow Function " +add(27,15);
+            document.getElementById("p6").innerHTML="Arrow Function " +hi1("Chimi")
+        </script>
+    </body>
+</html>
